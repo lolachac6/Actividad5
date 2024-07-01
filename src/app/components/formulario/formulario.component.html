@@ -1,1 +1,39 @@
-<p>formulario works!</p>
+<div class="formulario">
+  <div>
+    <label for="Titulo">Titulo de noticia</label>
+    <input
+      id="Titulo"
+      type="text"
+      placeholder="introduce el Titulo"
+      [(ngModel)]="newNoticia.titulo"
+    />
+  </div>
+  <div>
+    <label for="enlace">Enlace de la noticia</label>
+    <input
+      id="enlace"
+      type="url"
+      placeholder="introduce el enlace"
+      [(ngModel)]="newNoticia.imagen"
+    />
+  </div>
+  <div>
+    <label for="texto">Texto de la noticia</label>
+    <input
+      id="texto"
+      type="text"
+      placeholder="introduce texto"
+      [(ngModel)]="newNoticia.texto"
+    />
+  </div>
+  <div>
+    <label for="fecha">fecha de publicacion</label>
+    <input
+      id="fecha"
+      type="date"
+      placeholder="introduce la fecha"
+      [(ngModel)]="newNoticia.fecha"
+    />
+  </div>
+  <button (click)="guardarNoticia()">Guardar noticia</button>
+</div>
