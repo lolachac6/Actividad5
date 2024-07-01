@@ -1,0 +1,21 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input{
+        display: block;
+        width: 70%;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+    button{
+        width: 20%;
+        display: inline-block;
+        background-color: #cecece;
+        padding: 8px 12px;
+        border-radius: 8px;
+       
+        
+    }
+}
