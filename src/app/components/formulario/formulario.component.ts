@@ -11,9 +11,11 @@ import { Inoticias } from '../../interfaces/inoticias.interface';
 })
 export class FormularioComponent {
   newNoticia: Inoticias = {titulo:"",imagen:"", texto:"",fecha:""}
- // @Output() noticiaEmitir: EventEmitter<Inoticias> = new EventEmitter()
+ @Output() noticiaEmitida: EventEmitter<Inoticias> = new EventEmitter()
   guardarNoticia():void{
-    console.log(this.newNoticia)
+   this.noticiaEmitida.emit(this.newNoticia)
+   this.newNoticia = {titulo:"",imagen:"", texto:"",fecha:""}
+  
   }
 
 }
