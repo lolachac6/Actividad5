@@ -1,0 +1,14 @@
+
+.wrapper{
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1440px;
+}
+.flex{
+    
+    
+    display: flex;
+    justify-content: space-between;
+   
+}
