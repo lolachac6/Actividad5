@@ -1,6 +1,8 @@
-<div>
-  <app-listado-noticias></app-listado-noticias>
-</div>
-<div>
-  <app-formulario></app-formulario>
+<div class="flex">
+  <aside>
+    <app-formulario></app-formulario>
+  </aside>
+  <section>
+    <app-listado-noticias [noticiasInput]="noticias"></app-listado-noticias>
+  </section>
 </div>
