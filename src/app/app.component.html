@@ -1,10 +1,14 @@
 <div class="wrapper">
-  <h1>NOTICIAS DE ÚLTIMA HORA</h1>
+  <h1>CREA TU NOTICIA Y MUESTRALA EN NUESTRA PÁGINA</h1>
   <div class="flex">
     <aside>
-      <app-formulario></app-formulario>
+      <h1>FORMULARIO PARA AGREGRAR TU NOTICIA</h1>
+      <app-formulario
+        (noticiaEmitida)="agregarNoticia($event)"
+      ></app-formulario>
     </aside>
     <section>
+      <h1>LISTA DE NOTICIAS</h1>
       <app-listado-noticias [noticiasInput]="noticias"></app-listado-noticias>
     </section>
   </div>
