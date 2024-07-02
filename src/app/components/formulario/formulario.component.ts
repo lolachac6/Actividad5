@@ -13,9 +13,14 @@ export class FormularioComponent {
   newNoticia: Inoticias = {titulo:"",imagen:"", texto:"",fecha:""}
  @Output() noticiaEmitida: EventEmitter<Inoticias> = new EventEmitter()
   guardarNoticia():void{
-   this.noticiaEmitida.emit(this.newNoticia)
-   this.newNoticia = {titulo:"",imagen:"", texto:"",fecha:""}
-  
+    if(this.newNoticia.titulo !== "" && this.newNoticia.imagen !== "" && this.newNoticia.texto !== "" && this.newNoticia.fecha !== ""){
+      this.noticiaEmitida.emit(this.newNoticia)
+      this.newNoticia = {titulo:"",imagen:"", texto:"",fecha:""}
+     
+    }else{
+      alert("Es obligatorio rellenar todos los campos del formulario")
+    }
+   
   }
 
 }

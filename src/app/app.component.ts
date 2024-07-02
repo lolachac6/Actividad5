@@ -16,17 +16,11 @@ export class AppComponent {
  
 
  agregarNoticia($event:Inoticias){
-  if(!$event.fecha){
-    alert("Rellene todo los campos del formulario")
-  }else if(!$event.titulo){
-    alert("Rellene todo los campos del formulario")
-  }else if(!$event.texto){
-    alert("Rellene todo los campos del formulario")
-  }else{
+
     this.noticias.push($event)
   }
    
-  }
+  
   
  }
 
